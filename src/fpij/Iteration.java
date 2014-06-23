@@ -14,9 +14,7 @@ public class Iteration {
             System.out.println(Folks.friends.get(i));
         }
 
-        for (String name:Folks.friends){
-            System.out.println(name);
-        }
+        Folks.friends.forEach(System.out::println);
 
         Folks.friends.forEach(new Consumer<String>() {
             @Override
